@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import cart from "../../assets/cart_icon.png";
 import "./Navbar.css";
@@ -13,16 +14,20 @@ function Navbar() {
       </section>
       <ul className="navbar_links">
         <li onClick={() => setMenu("home")}>
-          Home {menu === "home" ? <hr /> : ""}
+          <NavLink className="navbar_navlinks">Home</NavLink>{" "}
+          {menu === "home" ? <hr /> : ""}
         </li>
         <li onClick={() => setMenu("mens")}>
-          Men {menu === "mens" ? <hr /> : ""}
+          <NavLink className="navbar_navlinks">Mens</NavLink>{" "}
+          {menu === "mens" ? <hr /> : ""}
         </li>
         <li onClick={() => setMenu("womans")}>
-          Woman {menu === "womans" ? <hr /> : ""}
+          <NavLink className="navbar_navlinks">Womans</NavLink>{" "}
+          {menu === "womans" ? <hr /> : ""}
         </li>
         <li onClick={() => setMenu("kids")}>
-          Kids {menu === "kids" ? <hr /> : ""}
+          <NavLink className="navbar_navlinks">Kids</NavLink>{" "}
+          {menu === "kids" ? <hr /> : ""}
         </li>
       </ul>
       <section className="navbar_cart">

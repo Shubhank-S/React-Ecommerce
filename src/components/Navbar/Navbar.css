@@ -34,6 +34,10 @@
     gap: 3px;
 }
 
+.navbar_navlinks {
+    text-decoration: none;
+}
+
 .navbar_links hr {
     border: none;
     width: 100%;
