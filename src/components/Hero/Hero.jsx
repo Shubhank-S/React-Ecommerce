@@ -5,7 +5,7 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero_left">
         <h3>New Arrival only</h3>
         <span className="hero_hand_image">
@@ -24,7 +24,7 @@ function Hero() {
       <div className="hero_right">
         <img src={heroImage} alt="No hero Image" className="hero_image" />
       </div>
-    </div>
+    </section>
   );
 }
 
