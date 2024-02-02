@@ -7,7 +7,7 @@ function Offers() {
       <div className="offers_left">
         <h1>Exclusive</h1>
         <h1>Offers for you</h1>
-        <h5>ONLY ON BEST SELLSERS PRODUCTS</h5>
+        <h5>ONLY ON BEST SELLERS PRODUCTS</h5>
         <button>Check Now</button>
       </div>
       <div className="offers_right">
