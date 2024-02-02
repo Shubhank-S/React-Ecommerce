@@ -52,7 +52,7 @@
     gap: 45px;
 }
 
-.navbar_cart button {
+/* .navbar_cart button {
     width: 160px;
     height: 60px;
     outline: none;
@@ -67,7 +67,7 @@
     background-color: maroon;
     color: white;
     transition: 1s;
-}
+} */
 
 .navbar_cart_count {
     width: 22px;

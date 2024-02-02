@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import cart from "../../assets/cart_icon.png";
+import Button from "../../utils/Button/Button";
 import "./Navbar.css";
 
 function Navbar() {
@@ -31,7 +32,7 @@ function Navbar() {
         </li>
       </ul>
       <section className="navbar_cart">
-        <button>Login</button>
+        <Button name="LOGIN" />
         <img src={cart} alt="No Cart" />
         <div className="navbar_cart_count">0</div>
       </section>

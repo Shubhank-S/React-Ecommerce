@@ -4,7 +4,7 @@
     align-items: center;
     gap: 20px;
     height: 140vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .newcollections h1 {
@@ -13,7 +13,7 @@
 }
 
 .newcollections hr {
-    width: 300px;
+    width: 250px;
     height: 5px;
     background: #000;
 }
