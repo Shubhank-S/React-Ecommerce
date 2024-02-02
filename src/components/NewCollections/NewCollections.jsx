@@ -1,14 +1,14 @@
 import Item from "../../utils/Item/Item";
-import data_product from "../../api/data";
-import "./Popular.css";
+import new_collections from "../../api/new_collections";
+import "./NewCollections.css";
 
-function Popular() {
+function NewCollections() {
   return (
-    <section className="popular">
-      <h1>Popular in woman</h1>
+    <section className="newcollections">
+      <h1>New Collections</h1>
       <hr />
-      <div className="popular_item">
-        {data_product.map((item, i) => (
+      <div className="newcollections_data">
+        {new_collections.map((item, i) => (
           <Item
             key={i}
             id={item.id}
@@ -23,4 +23,4 @@ function Popular() {
   );
 }
 
-export default Popular;
+export default NewCollections;
