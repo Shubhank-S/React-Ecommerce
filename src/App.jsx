@@ -2,11 +2,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
-import { useContext } from "react";
-import { ShopContext } from "./context/ShopContext";
+import useShopContext from "./hooks/useShopContext";
 
 function App() {
-  const name = useContext(ShopContext);
+  const name = useShopContext();
   console.log(name);
   return (
     <main>
