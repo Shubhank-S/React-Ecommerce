@@ -33,5 +33,5 @@ let data_product = [
     old_price: 150.00,
   },
 ];
-console.log(data_product)
+// console.log(data_product)
 export default data_product;

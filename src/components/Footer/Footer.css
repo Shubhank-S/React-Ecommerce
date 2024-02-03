@@ -32,13 +32,11 @@
 
 .footer_links li {
     cursor: pointer;
-
 }
 
 .footer_socialmedia_icons {
     display: flex;
     gap: 20px;
-
 }
 
 .footer_socialmedia_icon {
