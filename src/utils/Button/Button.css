@@ -2,7 +2,7 @@
     width: 160px;
     height: 60px;
     outline: none;
-    border: 1px solid grey;
+    border: none;
     border-radius: 100px;
     font-weight: bold;
     font-size: 20px;
@@ -10,7 +10,7 @@
 }
 
 .button:hover {
-    background-color: maroon;
+    background-color: #ff8fab;
     color: white;
     transition: 1s;
 }
