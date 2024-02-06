@@ -1,21 +1,31 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
+import ShopCategory from "./pages/ShopCategory/ShopCategory";
 import Footer from "./components/Footer/Footer";
-import useShopContext from "./hooks/useShopContext";
+import MenBanner from "./assets/banner_mens.png";
+import WomanBanner from "./assets/banner_women.png";
+import KidBanner from "./assets/banner_kids.png";
 
 function App() {
-  const name = useShopContext();
-  console.log(name);
   return (
     <main>
       <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/men" element={<h1>This is men Page</h1>} />
-          <Route path="/woman" element={<h1>This is woman Page</h1>} />
-          <Route path="/kids" element={<h1>This is kids Page</h1>} />
+          <Route
+            path="/mens"
+            element={<ShopCategory category="men" banner={MenBanner} />}
+          />
+          <Route
+            path="/womans"
+            element={<ShopCategory category="women" banner={WomanBanner} />}
+          />
+          <Route
+            path="/kids"
+            element={<ShopCategory category="kid" banner={KidBanner} />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

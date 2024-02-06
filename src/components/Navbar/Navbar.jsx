@@ -15,19 +15,27 @@ function Navbar() {
       </section>
       <ul className="navbar_links">
         <li onClick={() => setMenu("home")}>
-          <NavLink className="navbar_navlinks">Home</NavLink>{" "}
+          <NavLink to="/" className="navbar_navlinks">
+            Home
+          </NavLink>
           {menu === "home" ? <hr /> : ""}
         </li>
         <li onClick={() => setMenu("mens")}>
-          <NavLink className="navbar_navlinks">Mens</NavLink>{" "}
+          <NavLink to="mens" className="navbar_navlinks">
+            Mens
+          </NavLink>
           {menu === "mens" ? <hr /> : ""}
         </li>
         <li onClick={() => setMenu("womans")}>
-          <NavLink className="navbar_navlinks">Womans</NavLink>{" "}
+          <NavLink to="womans" className="navbar_navlinks">
+            Womans
+          </NavLink>
           {menu === "womans" ? <hr /> : ""}
         </li>
         <li onClick={() => setMenu("kids")}>
-          <NavLink className="navbar_navlinks">Kids</NavLink>{" "}
+          <NavLink to="kids" className="navbar_navlinks">
+            Kids
+          </NavLink>
           {menu === "kids" ? <hr /> : ""}
         </li>
       </ul>
