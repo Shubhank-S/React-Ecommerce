@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import cart from "../../assets/cart_icon.png";
 import Button from "../../utils/Button/Button";
@@ -7,6 +7,7 @@ import "./Navbar.css";
 
 function Navbar() {
   const [menu, setMenu] = useState("home");
+  const navigate = useNavigate();
   return (
     <header className="navbar">
       <section className="navbar_logo">
@@ -40,7 +41,9 @@ function Navbar() {
         </li>
       </ul>
       <section className="navbar_cart">
-        <Button name="LOGIN" />
+        <Link to="/login">
+          <Button name="LOGIN" />
+        </Link>
         <img src={cart} alt="No Cart" />
         <div className="navbar_cart_count">0</div>
       </section>

@@ -1,0 +1,56 @@
+.register {
+    width: 100%;
+    height: 72vh;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    background-color: #81fefc;
+}
+
+.register_container {
+    position: relative;
+    bottom: 30px;
+    width: 360px;
+    height: 380px;
+    background: white;
+    margin: auto;
+    padding: 40px 80px;
+    border-radius: 20px;
+}
+
+.register_container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+
+.register_fields {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.register_fields input {
+    height: 50px;
+    width: 120%;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+}
+
+.register_button {
+    width: 100%;
+    height: 12%;
+    margin-top: 30px;
+    font-size: 15px;
+    background-color: indianred;
+    color: white;
+    cursor: pointer;
+}
+
+.register_to_login {
+    position: relative;
+    top: 12px;
+    left: 38px;
+    font-size: 15px;
+}

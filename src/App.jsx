@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import ShopCategory from "./pages/ShopCategory/ShopCategory";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
 import Footer from "./components/Footer/Footer";
 import MenBanner from "./assets/banner_mens.png";
 import WomanBanner from "./assets/banner_women.png";
@@ -26,6 +28,8 @@ function App() {
             path="/kids"
             element={<ShopCategory category="kid" banner={KidBanner} />}
           />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         <Footer />
       </BrowserRouter>
