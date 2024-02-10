@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import "./item.css";
 
-function Item({ image, name, new_price, old_price }) {
+function Item({ image, name, new_price, old_price, id }) {
   return (
     <section className="item">
-      <img src={image} alt="No Item" />
+      <Link to={`product/${id}`}>
+        <img src={image} alt="No Item" />
+      </Link>
       <p>{name}</p>
       <div className="item_prices">
         <div className="item_price_new">${new_price}</div>

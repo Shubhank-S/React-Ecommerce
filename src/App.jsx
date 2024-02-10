@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import ShopCategory from "./pages/ShopCategory/ShopCategory";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import Product from "./pages/Product/Product";
 import Footer from "./components/Footer/Footer";
 import MenBanner from "./assets/banner_mens.png";
 import WomanBanner from "./assets/banner_women.png";
@@ -30,6 +31,9 @@ function App() {
           />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/product" element={<Product />}>
+            <Route path=":productId" element={<Product />} />
+          </Route>
         </Routes>
         <Footer />
       </BrowserRouter>
