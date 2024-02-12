@@ -1,0 +1,11 @@
+.productdisplay {
+    display: flex;
+}
+
+.productdisplay_left {
+    width: 50%;
+}
+
+.productdisplay_right {
+    width: 50%;
+}

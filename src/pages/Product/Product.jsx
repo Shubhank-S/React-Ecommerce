@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import useShopContext from "../../hooks/useShopContext";
 import BreadCrumbs from "../../components/BreadCrumbs/BreadCrumbs";
 import ProductDisplay from "../../components/ProductDisplay/ProductDisplay";
 import DescriptionBox from "../../components/DescriptionBox/DescriptionBox";
+import RelatedProducts from "../../components/RelatedProducts/RelatedProducts";
 import "./Product.css";
 
 function Product() {
@@ -15,6 +16,8 @@ function Product() {
       <BreadCrumbs product={product} />
       <ProductDisplay product={product} />
       <DescriptionBox />
+      <RelatedProducts />
+      <Outlet />
     </section>
   );
 }
