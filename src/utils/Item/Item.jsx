@@ -4,7 +4,7 @@ import "./item.css";
 function Item({ image, name, new_price, old_price, id }) {
   return (
     <section className="item">
-      <Link to={`product/${id}`}>
+      <Link to={`/product/${id}`}>
         <img src={image} alt="No Item" />
       </Link>
       <p>{name}</p>

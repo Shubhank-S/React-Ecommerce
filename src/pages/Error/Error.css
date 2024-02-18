@@ -1,0 +1,19 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 103px;
+    /* text-align: center; */
+    /* margin-top: 150px;
+    margin-bottom: 100px; */
+}
+
+.error_h1 {
+    font-size: 100px;
+}
+
+.error_h2 {
+    font-size: 70px;
+}

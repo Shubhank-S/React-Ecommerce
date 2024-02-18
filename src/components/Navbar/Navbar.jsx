@@ -12,7 +12,9 @@ function Navbar() {
     <header className="navbar">
       <section className="navbar_logo">
         <img src={logo} alt="No Logo" />
-        <p>Ecommerce</p>
+        <Link to="/" className="navbar_navlinks">
+          <p>Ecommerce</p>
+        </Link>
       </section>
       <ul className="navbar_links">
         <li onClick={() => setMenu("home")}>
@@ -44,7 +46,9 @@ function Navbar() {
         <Link to="/login">
           <Button name="LOGIN" />
         </Link>
-        <img src={cart} alt="No Cart" />
+        <Link to="/cart">
+          <img src={cart} alt="No Cart" />
+        </Link>
         <div className="navbar_cart_count">0</div>
       </section>
     </header>
