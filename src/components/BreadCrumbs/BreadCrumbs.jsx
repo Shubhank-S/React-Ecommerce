@@ -2,7 +2,7 @@ import BreadCrumbArrow from "../../assets/breadcrum_arrow.png";
 import "./BreadCrumbs.css";
 
 function BreadCrumbs({ product }) {
-  console.log(product);
+  // console.log(product);
   return (
     <section className="breadcrumb">
       HOME <img src={BreadCrumbArrow} alt="No Bread Crumb Arrow" />

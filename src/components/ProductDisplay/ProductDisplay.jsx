@@ -1,9 +1,12 @@
+import useShopContext from "../../hooks/useShopContext";
 import Button from "../../utils/Button/Button";
 import starIcon from "../../assets/star_icon.png";
 import starDullIcon from "../../assets/star_dull_icon.png";
 import "./ProductDisplay.css";
 
 function ProductDisplay({ product }) {
+  const { AddToCart } = useShopContext();
+  // console.log(all_product);
   return (
     <section className="productdisplay">
       <div className="productdisplay_left">
@@ -53,7 +56,7 @@ function ProductDisplay({ product }) {
           <div>XXL</div>
         </div>
         <div className="add_to_cart_container">
-          <Button name="Add To Cart" />
+          <button onClick={() => AddToCart(product.id)}>Add To Cart</button>
         </div>
         <p className="productdisplay_right_category">
           <span>Category :</span>Woman, T-Shirt, Crop Top
